@@ -23,4 +23,4 @@ if (count($action_args) == 1 && $action_args[0] == "") {
 }
 
 do_action('admin_init');
-do_action($action, $action_args);
+do_action($action, ...$action_args);

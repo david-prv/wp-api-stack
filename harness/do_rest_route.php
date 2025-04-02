@@ -1,8 +1,6 @@
 <?php
 
-// include('../wp-load.php');
-
-include("../bp-load.php");
+include('../bp-load.php');
 
 $route = explode("@", $_GET['route'] ?? '');
 $routes = [];

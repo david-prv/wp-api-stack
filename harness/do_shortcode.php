@@ -1,15 +1,13 @@
 <?php
 
-// include('../wp-load.php');
-
-include("../bp-load.php");
+include('../bp-load.php');
 
 $shortcode = $_GET['shortcode'] ?? '';
 $shortcodes = [];
 
 $shortcode_args = explode(",", $_GET['args'] ?? '');
 if (count($shortcode_args) == 1 && $shortcode_args[0] == "") {
-    $shortcode_args = false;
+    $shortcode_args = null;
 }
 
 foreach ($shortcode_tags as $k => $v) {
